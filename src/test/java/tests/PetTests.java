@@ -4,6 +4,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import constant.ResponseCode;
 import data.PetData;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.simple.JSONArray;
@@ -35,6 +39,9 @@ public class PetTests extends BaseTest {
     }
 
     @Test(groups = {"pets"})
+    @Description("Test to create new pets")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Tests for pet")
     public void createNewPetTest() throws JsonProcessingException {
 
         PetData petData = PetData.builder().id(1)
@@ -58,6 +65,9 @@ public class PetTests extends BaseTest {
     }
 
     @Test(groups = {"pets"})
+    @Description("Test to update extisting pet")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Tests for pet")
     public void updateExistingPetTest() throws JsonProcessingException {
         PetData petData = PetData.builder().id(1)
                 .category(PetData.Category.builder().id(11).name("update").build())
@@ -78,6 +88,9 @@ public class PetTests extends BaseTest {
     }
 
     @Test(dataProvider = "status", groups = {"pets"})
+    @Description("Test to get pets by status available,sold,pending")
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("Tests for pet")
     public void getPetByStatusTest(String status) throws JsonProcessingException, ParseException {
         PetRequests request = new PetRequests();
         Response res = request.findPetsByStatus(ResponseCode.OK, status);

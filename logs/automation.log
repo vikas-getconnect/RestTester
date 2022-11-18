@@ -1,0 +1,153 @@
+2022-11-17 22:01:47 INFO  [main] [] - -------------------------------------------------
+2022-11-17 22:01:47 INFO  [main] [] - ------------ Test Started : createMultipleUsersTest ------------------
+2022-11-17 22:01:47 INFO  [main] [] - https://petstore.swagger.io/v2/
+2022-11-17 22:01:50 INFO  [main] [] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-17 22:01:51 INFO  [main] [] - ------------ Test End : createMultipleUsersTest ------------------
+2022-11-17 22:01:51 INFO  [main] [] -                                              
+2022-11-17 22:01:51 INFO  [main] [] - -------------------------------------------------
+2022-11-17 22:01:51 INFO  [main] [] - ------------ Test Started : getUserByInvalidNameTest ------------------
+2022-11-17 22:01:51 INFO  [main] [] - GET user/ddsadwdw
+2022-11-17 22:01:53 INFO  [main] [] - GET https://petstore.swagger.io/v2/user/ddsadwdw Expected Response 404 Observed Response 404
+2022-11-17 22:01:53 INFO  [main] [] - ------------ Test End : getUserByInvalidNameTest ------------------
+2022-11-17 22:01:53 INFO  [main] [] -                                              
+2022-11-17 22:01:53 INFO  [main] [] - -------------------------------------------------
+2022-11-17 22:01:53 INFO  [main] [] - ------------ Test Started : getUserByNameTest ------------------
+2022-11-17 22:01:53 INFO  [main] [] - https://petstore.swagger.io/v2/
+2022-11-17 22:01:54 INFO  [main] [] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"mindtickle","firstname":"mind","lastname":"tickle","email":"a@b.c","password":"mind@123","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-17 22:01:54 INFO  [main] [] - GET user/mindtickle
+2022-11-17 22:01:56 INFO  [main] [] - GET https://petstore.swagger.io/v2/user/mindtickle Expected Response 200 Observed Response 200
+2022-11-17 22:01:56 INFO  [main] [] - ------------ Test End : getUserByNameTest ------------------
+2022-11-17 22:01:56 INFO  [main] [] -                                              
+2022-11-17 22:01:56 INFO  [main] [] - -------------------------------------------------
+2022-11-17 22:01:56 INFO  [main] [] - ------------ Test Started : updateUserByUserNameTest ------------------
+2022-11-17 22:01:58 INFO  [main] [] - PUT https://petstore.swagger.io/v2/user/vikas {"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0} Expected Response 200 Observed Response 200
+2022-11-17 22:01:58 INFO  [main] [] - ------------ Test End : updateUserByUserNameTest ------------------
+2022-11-17 22:01:58 INFO  [main] [] -                                              
+2022-11-17 22:06:20 INFO  [main] [] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-17 22:06:21 INFO  [main] [] - GET pet/findByStatus?status=available
+2022-11-17 22:06:24 INFO  [main] [] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=available Expected Response 200 Observed Response 200
+2022-11-17 22:06:25 INFO  [main] [] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-17 22:06:25 INFO  [main] [] -                                              
+2022-11-17 22:06:25 INFO  [main] [] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-17 22:06:25 INFO  [main] [] - GET pet/findByStatus?status=sold
+2022-11-17 22:06:27 INFO  [main] [] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold Expected Response 200 Observed Response 200
+2022-11-17 22:06:27 INFO  [main] [] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-17 22:06:27 INFO  [main] [] -                                              
+2022-11-17 22:06:27 INFO  [main] [] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-17 22:06:27 INFO  [main] [] - GET pet/findByStatus?status=pending
+2022-11-17 22:06:28 INFO  [main] [] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=pending Expected Response 200 Observed Response 200
+2022-11-17 22:06:28 INFO  [main] [] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-17 22:06:28 INFO  [main] [] -                                              
+2022-11-17 23:19:56 INFO  [main] [tests.BaseTest] - ------------ Test Started : createMultipleUsersTest ------------------
+2022-11-17 23:19:56 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-17 23:21:01 INFO  [main] [tests.BaseTest] - ------------ Test Started : createMultipleUsersTest ------------------
+2022-11-17 23:21:02 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-17 23:21:05 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-17 23:21:05 INFO  [main] [tests.BaseTest] - ------------ Test End : createMultipleUsersTest ------------------
+2022-11-17 23:21:05 INFO  [main] [tests.BaseTest] -                                              
+2022-11-17 23:21:05 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByInvalidNameTest ------------------
+2022-11-17 23:21:05 INFO  [main] [utils.RestUtil] - GET user/ddsadwdw
+2022-11-17 23:21:07 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/ddsadwdw Expected Response 404 Observed Response 404
+2022-11-17 23:21:07 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByInvalidNameTest ------------------
+2022-11-17 23:21:07 INFO  [main] [tests.BaseTest] -                                              
+2022-11-17 23:21:07 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByNameTest ------------------
+2022-11-17 23:21:07 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-17 23:21:09 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"mindtickle","firstname":"mind","lastname":"tickle","email":"a@b.c","password":"mind@123","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-17 23:21:09 INFO  [main] [utils.RestUtil] - GET user/mindtickle
+2022-11-17 23:21:11 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/mindtickle Expected Response 200 Observed Response 200
+2022-11-17 23:21:11 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByNameTest ------------------
+2022-11-17 23:21:11 INFO  [main] [tests.BaseTest] -                                              
+2022-11-17 23:21:11 INFO  [main] [tests.BaseTest] - ------------ Test Started : updateUserByUserNameTest ------------------
+2022-11-17 23:21:12 INFO  [main] [utils.RestUtil] - PUT https://petstore.swagger.io/v2/user/vikas {"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0} Expected Response 200 Observed Response 200
+2022-11-17 23:21:12 INFO  [main] [tests.BaseTest] - ------------ Test End : updateUserByUserNameTest ------------------
+2022-11-17 23:21:12 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:17 INFO  [main] [tests.BaseTest] - ------------ Test Started : createNewPetTest ------------------
+2022-11-18 12:34:17 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:34:20 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/pet{"id":1,"name":"tj","category":{"id":11,"name":"ddas"},"photoUrls":["https://sample.com"],"tags":[{"id":1,"name":"tag_0"}],"status":"available"} Expected Response 200 Observed Response 200
+2022-11-18 12:34:21 INFO  [main] [tests.BaseTest] - ------------ Test End : createNewPetTest ------------------
+2022-11-18 12:34:21 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:21 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:34:21 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=available
+2022-11-18 12:34:23 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=available Expected Response 200 Observed Response 200
+2022-11-18 12:34:23 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:34:23 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:23 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:34:23 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=sold
+2022-11-18 12:34:25 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold Expected Response 200 Observed Response 200
+2022-11-18 12:34:25 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:34:25 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:25 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:34:25 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=pending
+2022-11-18 12:34:27 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=pending Expected Response 200 Observed Response 200
+2022-11-18 12:34:27 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:34:27 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:27 INFO  [main] [tests.BaseTest] - ------------ Test Started : updateExistingPetTest ------------------
+2022-11-18 12:34:28 INFO  [main] [utils.RestUtil] - PUT https://petstore.swagger.io/v2/pet {"id":1,"name":"tj","category":{"id":11,"name":"update"},"photoUrls":["https://sample.com"],"tags":[{"id":1,"name":"tag_0"}],"status":"available"} Expected Response 200 Observed Response 200
+2022-11-18 12:34:28 INFO  [main] [tests.BaseTest] - ------------ Test End : updateExistingPetTest ------------------
+2022-11-18 12:34:28 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:28 INFO  [main] [tests.BaseTest] - ------------ Test Started : createMultipleUsersTest ------------------
+2022-11-18 12:34:28 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:34:30 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-18 12:34:30 INFO  [main] [tests.BaseTest] - ------------ Test End : createMultipleUsersTest ------------------
+2022-11-18 12:34:30 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:30 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByInvalidNameTest ------------------
+2022-11-18 12:34:30 INFO  [main] [utils.RestUtil] - GET user/ddsadwdw
+2022-11-18 12:34:32 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/ddsadwdw Expected Response 404 Observed Response 404
+2022-11-18 12:34:32 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByInvalidNameTest ------------------
+2022-11-18 12:34:32 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:32 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByNameTest ------------------
+2022-11-18 12:34:32 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:34:34 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"mindtickle","firstname":"mind","lastname":"tickle","email":"a@b.c","password":"mind@123","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-18 12:34:34 INFO  [main] [utils.RestUtil] - GET user/mindtickle
+2022-11-18 12:34:35 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/mindtickle Expected Response 200 Observed Response 200
+2022-11-18 12:34:35 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByNameTest ------------------
+2022-11-18 12:34:35 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:34:35 INFO  [main] [tests.BaseTest] - ------------ Test Started : updateUserByUserNameTest ------------------
+2022-11-18 12:34:37 INFO  [main] [utils.RestUtil] - PUT https://petstore.swagger.io/v2/user/vikas {"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0} Expected Response 200 Observed Response 200
+2022-11-18 12:34:37 INFO  [main] [tests.BaseTest] - ------------ Test End : updateUserByUserNameTest ------------------
+2022-11-18 12:34:37 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:39 INFO  [main] [tests.BaseTest] - ------------ Test Started : createNewPetTest ------------------
+2022-11-18 12:35:39 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:35:42 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/pet{"id":1,"name":"tj","category":{"id":11,"name":"ddas"},"photoUrls":["https://sample.com"],"tags":[{"id":1,"name":"tag_0"}],"status":"available"} Expected Response 200 Observed Response 200
+2022-11-18 12:35:43 INFO  [main] [tests.BaseTest] - ------------ Test End : createNewPetTest ------------------
+2022-11-18 12:35:43 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:43 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:35:43 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=available
+2022-11-18 12:35:45 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=available Expected Response 200 Observed Response 200
+2022-11-18 12:35:45 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:35:45 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:45 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:35:45 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=sold
+2022-11-18 12:35:47 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold Expected Response 200 Observed Response 200
+2022-11-18 12:35:47 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:35:47 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:47 INFO  [main] [tests.BaseTest] - ------------ Test Started : getPetByStatusTest ------------------
+2022-11-18 12:35:47 INFO  [main] [utils.RestUtil] - GET pet/findByStatus?status=pending
+2022-11-18 12:35:49 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/pet/findByStatus?status=pending Expected Response 200 Observed Response 200
+2022-11-18 12:35:49 INFO  [main] [tests.BaseTest] - ------------ Test End : getPetByStatusTest ------------------
+2022-11-18 12:35:49 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:49 INFO  [main] [tests.BaseTest] - ------------ Test Started : updateExistingPetTest ------------------
+2022-11-18 12:35:51 INFO  [main] [utils.RestUtil] - PUT https://petstore.swagger.io/v2/pet {"id":1,"name":"tj","category":{"id":11,"name":"update"},"photoUrls":["https://sample.com"],"tags":[{"id":1,"name":"tag_0"}],"status":"available"} Expected Response 200 Observed Response 200
+2022-11-18 12:35:51 INFO  [main] [tests.BaseTest] - ------------ Test End : updateExistingPetTest ------------------
+2022-11-18 12:35:51 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:51 INFO  [main] [tests.BaseTest] - ------------ Test Started : createMultipleUsersTest ------------------
+2022-11-18 12:35:51 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:35:53 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-18 12:35:53 INFO  [main] [tests.BaseTest] - ------------ Test End : createMultipleUsersTest ------------------
+2022-11-18 12:35:53 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:53 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByInvalidNameTest ------------------
+2022-11-18 12:35:53 INFO  [main] [utils.RestUtil] - GET user/ddsadwdw
+2022-11-18 12:35:54 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/ddsadwdw Expected Response 404 Observed Response 404
+2022-11-18 12:35:54 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByInvalidNameTest ------------------
+2022-11-18 12:35:54 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:54 INFO  [main] [tests.BaseTest] - ------------ Test Started : getUserByNameTest ------------------
+2022-11-18 12:35:55 INFO  [main] [utils.RestUtil] - https://petstore.swagger.io/v2/
+2022-11-18 12:35:56 INFO  [main] [utils.RestUtil] - POST https://petstore.swagger.io/v2/user/createWithArray[{"id":1,"username":"mindtickle","firstname":"mind","lastname":"tickle","email":"a@b.c","password":"mind@123","phone":"1234","userstatus":0}] Expected Response 200 Observed Response 200
+2022-11-18 12:35:56 INFO  [main] [utils.RestUtil] - GET user/mindtickle
+2022-11-18 12:35:58 INFO  [main] [utils.RestUtil] - GET https://petstore.swagger.io/v2/user/mindtickle Expected Response 200 Observed Response 200
+2022-11-18 12:35:58 INFO  [main] [tests.BaseTest] - ------------ Test End : getUserByNameTest ------------------
+2022-11-18 12:35:58 INFO  [main] [tests.BaseTest] -                                              
+2022-11-18 12:35:58 INFO  [main] [tests.BaseTest] - ------------ Test Started : updateUserByUserNameTest ------------------
+2022-11-18 12:36:00 INFO  [main] [utils.RestUtil] - PUT https://petstore.swagger.io/v2/user/vikas {"id":1,"username":"sadsd","firstname":"sasda","lastname":"sdas","email":"a@b.c","password":"dasdasdsa","phone":"1234","userstatus":0} Expected Response 200 Observed Response 200
+2022-11-18 12:36:00 INFO  [main] [tests.BaseTest] - ------------ Test End : updateUserByUserNameTest ------------------
+2022-11-18 12:36:00 INFO  [main] [tests.BaseTest] -                                              
